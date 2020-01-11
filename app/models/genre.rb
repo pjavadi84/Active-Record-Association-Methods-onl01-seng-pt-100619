@@ -16,7 +16,7 @@ class Genre < ActiveRecord::Base
     artist_name = []
     self.artists.each do |t|
       artist_name << t.name
-      binding.pry
     end
+    artist_name
   end
 end
