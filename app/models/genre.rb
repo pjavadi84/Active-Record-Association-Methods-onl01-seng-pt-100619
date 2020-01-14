@@ -13,11 +13,11 @@ class Genre < ActiveRecord::Base
   end
 
   def all_artist_names
-    artist_name = []
-    self.artists.each do |t|
-      artist_name << t.name
-    end
-    artist_name
-  end
+  #   artist_name = []
+  #   self.artists.each do |t|
+  #     artist_name << t.name
+  #   end
+  #   artist_name
+  # end
   self.artists.collect(&:name)
 end
