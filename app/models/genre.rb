@@ -19,4 +19,5 @@ class Genre < ActiveRecord::Base
     end
     artist_name
   end
+  self.artists.collect(&)
 end
