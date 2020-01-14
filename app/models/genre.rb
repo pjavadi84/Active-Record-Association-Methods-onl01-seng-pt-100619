@@ -21,3 +21,4 @@ class Genre < ActiveRecord::Base
   # end
   self.artists.collect(&:name)
 end
+end
